@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO & Luxury Branding -->
+  <title>All Collections &amp; Masterpieces | LIBAS THAQWA — Luxury Islamic Menswear</title>
+  <meta name="description"
+    content="Explore the complete collection of Libas Thaqwa: authentic Emirati Kanduras, Omani Jubbahs, Saudi Kamees, Ceremonial Bishts, Master Fabrics, and Royal Accessories. Tailored in Pattikkad, Malappuram.">
+  <meta name="keywords"
+    content="Libas Thaqwa products, Kandura collection, Omani Jubbah, Saudi Kamees, Bisht, Toyobo Cotton, Islamic Menswear Kerala">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/emblem-official-crop.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;600;700;800&family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css?v=74.0"> 
+  <link rel="stylesheet" href="css/components.css?v=16.0"> 
+  <!-- Font Awesome for social icons --> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+  <!-- AOS (Animate On Scroll) Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+
+<body>
+
+  <!-- ========================================================================
+       SITE HEADER / NAVIGATION
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container navbar-inner">
+
+      <a href="index.html" class="brand-link" title="Libas Thaqwa Home">
+        <img src="assets/images/logo-horizontal-transparent.png?v=4.0" alt="Libas Thaqwa Official Logo" class="brand-official-logo">
+      </a>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html#home" class="nav-link">Home</a></li>
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="index.html#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="index.html#services" class="nav-link">Services</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Search, Quick Inquire) -->
+      <div class="nav-actions">
+        <!-- Search Icon Button -->
+        <button id="searchTriggerBtn" class="nav-icon-btn" aria-label="Search Catalog" title="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- WhatsApp Inquire Button -->
+        <a href="https://wa.me/919207907618" target="_blank" rel="noopener noreferrer" class="btn-pill-gold">
+          <span>Inquire via WhatsApp</span>
+          <span class="btn-arrow">→</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Open Navigation">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       PAGE HERO BANNER
+       ======================================================================== -->
+  <section class="products-page-hero">
+    <div class="container">
+      <nav class="breadcrumb-nav">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">All Collections</span>
+      </nav>
+      <span class="products-hero-label">Exclusive Catalog</span>
+      <h1 class="products-hero-title">Complete Islamic Menswear Collection</h1>
+      <p class="products-hero-desc">
+        Explore the complete Libas Thaqwa catalog — authentic Emirati Kanduras, Omani Jubbahs, Saudi Kamees, Ceremonial Bishts, Designer Thobes, and Royal GCC Accessories.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FULL PRODUCTS SECTION & CATEGORY FILTERING
+       ======================================================================== -->
+  <section class="page-products-section">
+    <div class="container">
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-category="all">All Collections (12)</button>
+        <button class="filter-btn" data-category="thobes">Jubbahs &amp; Thobes</button>
+        <button class="filter-btn" data-category="ihram">Hajj &amp; Umrah</button>
+        <button class="filter-btn" data-category="footwear">Footwear &amp; Naal</button>
+        <button class="filter-btn" data-category="accessories">Royal Accessories</button>
+      </div>
+
+      <!-- Products Grid (Renders ALL 12 items dynamically) -->
+      <div class="products-grid" id="productsGrid">
+        <!-- Rendered via JavaScript -->
+      </div>
+
+      <!-- Bespoke Tailoring Banner -->
+      <div class="products-banner-cta">
+        <div>
+          <span style="color:#d6b48f; font-size:0.8rem; letter-spacing:2.5px; font-weight:700; text-transform:uppercase; display:block; margin-bottom:8px;">Bespoke Tailoring Consultation</span>
+          <h3 style="font-size:1.65rem; font-weight:800; margin-bottom:8px; color:#ffffff;">Need Custom Fit for Your Madrasa, Dars or Personal Order?</h3>
+          <p style="color:rgba(255,255,255,0.8); font-size:0.95rem; max-width:680px; line-height:1.65; margin:0;">
+            Our master cutter takes over 14 tailored measurements. Contact us directly over WhatsApp for custom fabrics, necklines, embroidery, and institutional orders.
+          </p>
+        </div>
+        <a href="https://wa.me/919207907618" target="_blank" rel="noopener noreferrer" class="btn-more-collection" style="background:#d6b48f; color:#102e26; border-color:#d6b48f;">
+          <span>Chat on WhatsApp</span>
+          <span class="btn-arrow">→</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+
+      <div class="footer-top-grid">
+
+        <!-- Column 1: Brand & Quranic Inspiration -->
+        <div class="footer-brand-col">
+          <a href="index.html#home" class="brand-link" style="margin-bottom:16px;" title="Libas Thaqwa Home">
+            <img src="assets/images/logo-horizontal-transparent.png?v=4.0" alt="Libas Thaqwa Official Logo" class="footer-official-logo">
+          </a>
+
+          <div class="footer-quran-verse">« وَلِبَاسُ التَّقْوَىٰ ذَٰلِكَ خَيْرٌ »</div>
+
+          <p class="footer-brand-desc">
+            Specializing in high-quality garments for Madrasa, Dars, and Hifz institutions, as well as bespoke wear for individual patrons.
+          </p>
+
+          <div class="footer-location-pill">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Jamia Safa Mall, Pallikkuth, Pattikkad, Kerala</span>
+          </div>
+        </div>
+
+        <!-- Column 2: Our Store -->
+        <div class="footer-store-col">
+          <h4 class="footer-col-title">Our Store</h4>
+          <div class="footer-store-card">
+            <div class="footer-store-name">Libas Thaqwa Flagship Store</div>
+            
+            <div class="footer-info-row">
+              <span class="footer-info-icon" aria-hidden="true">
+                <i class="fa-solid fa-location-dot"></i>
+              </span>
+              <div class="footer-info-content">
+                <span class="footer-info-primary">Jamia Safa Mall, near Jamia Nooriya Arabic College</span>
+                <span class="footer-info-secondary">Pallikkuth, Pattikkad, Malappuram, Kerala 679325</span>
+              </div>
+            </div>
+
+            <div class="footer-info-row">
+              <span class="footer-info-icon" aria-hidden="true">
+                <i class="fa-solid fa-phone"></i>
+              </span>
+              <div class="footer-info-content">
+                <div class="footer-phone-links">
+                  <a href="tel:+919207907618" class="footer-phone-link">+91 92079 07618</a>
+                  <span class="footer-phone-sep">·</span>
+                  <a href="tel:+919846336798" class="footer-phone-link">+91 98463 36798</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-info-row">
+              <span class="footer-info-icon" aria-hidden="true">
+                <i class="fa-regular fa-clock"></i>
+              </span>
+              <div class="footer-info-content">
+                <span class="footer-hours-heading">Store Hours</span>
+                <span class="footer-info-secondary">Monday – Sunday: 8:00 AM – 8:00 PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 3: Co-Founder Contact -->
+        <div class="footer-founder-col">
+          <div class="founder-card">
+            <div class="founder-name-row">
+              <span class="founder-name">ABDU SALAM</span>
+            </div>
+            <div class="founder-role">CO-FOUNDER · LIBAS THAQWA</div>
+            <p class="founder-desc">Crafting premium Islamic wear with faith and passion since 2017. Custom orders and bespoke tailoring available.</p>
+            <div class="founder-contacts">
+              <a href="https://wa.me/919207907618" target="_blank" rel="noopener noreferrer" class="founder-contact-btn" title="Chat on WhatsApp" aria-label="WhatsApp">
+                <div class="founder-icon-circle"><i class="fa-brands fa-whatsapp"></i></div>
+                <span class="founder-contact-label">WhatsApp</span>
+              </a>
+              <a href="https://www.instagram.com/libasthaqwa.in/" target="_blank" rel="noopener noreferrer" class="founder-contact-btn" title="Follow on Instagram" aria-label="Instagram">
+                <div class="founder-icon-circle"><i class="fa-brands fa-instagram"></i></div>
+                <span class="founder-contact-label">Instagram</span>
+              </a>
+              <a href="https://www.facebook.com/libasthaqwachungam" target="_blank" rel="noopener noreferrer" class="founder-contact-btn" title="Follow on Facebook" aria-label="Facebook">
+                <div class="founder-icon-circle"><i class="fa-brands fa-facebook-f"></i></div>
+                <span class="founder-contact-label">Facebook</span>
+              </a>
+              <a href="mailto:libasthaqwa@gmail.com" class="founder-contact-btn" title="Send Email" aria-label="Email">
+                <div class="founder-icon-circle"><i class="fa-regular fa-envelope"></i></div>
+                <span class="founder-contact-label">Email</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-wrapper">
+        <!-- Gold Decorative Divider -->
+        <div class="footer-divider">
+          <span class="footer-divider-line"></span>
+          <span class="footer-divider-diamond">◆</span>
+          <span class="footer-divider-text">لباس تقوى</span>
+          <span class="footer-divider-diamond">◆</span>
+          <span class="footer-divider-line"></span>
+        </div>
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+          <div class="footer-bottom-left">
+            &copy; 2017 – 2026 <strong>LIBAS THAQWA</strong>. All Rights Reserved.
+          </div>
+          <div class="footer-bottom-center">
+            <span class="footer-bottom-verse">« وَلِبَاسُ التَّقْوَىٰ ذَٰلِكَ خَيْرٌ »</span>
+          </div>
+          <div class="footer-bottom-right">
+            <a href="https://www.instagram.com/libasthaqwa.in/" target="_blank" rel="noopener" class="footer-social-icon" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/libasthaqwachungam" target="_blank" rel="noopener" class="footer-social-icon" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://wa.me/919207907618" target="_blank" rel="noopener" class="footer-social-icon" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       LIVE SEARCH OVERLAY MODAL
+       ======================================================================== -->
+  <div class="search-modal-overlay" id="searchModalOverlay">
+    <div class="search-container">
+      <button class="search-close-btn" id="searchCloseBtn" aria-label="Close Search">✕</button>
+
+      <div class="search-input-wrapper">
+        <span class="search-icon-inside"><i class="fa-solid fa-magnifying-glass"></i></span>
+        <input type="text" class="search-main-input" id="searchMainInput"
+          placeholder="Search Kanduras, Jubbahs, Toyobo Cotton, Shemagh..." autocomplete="off">
+      </div>
+
+      <!-- Quick Search Suggestions -->
+      <div class="search-quick-tags">
+        <span class="search-tag-label">Popular Searches:</span>
+        <button class="search-tag-pill">Al-Malaki Kandura</button>
+        <button class="search-tag-pill">Omani Jubbah</button>
+        <button class="search-tag-pill">Toyobo Cotton</button>
+        <button class="search-tag-pill">Saudi Kamees</button>
+        <button class="search-tag-pill">Shemagh &amp; Agal</button>
+      </div>
+
+      <!-- Live Search Results -->
+      <div class="search-live-results" id="searchLiveResults"></div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       QUICK VIEW PRODUCT MODAL
+       ======================================================================== -->
+  <div class="quickview-modal-overlay" id="quickviewModalOverlay">
+    <div class="quickview-card">
+      <button class="quickview-close-btn" id="quickviewCloseBtn" aria-label="Close Quick View">✕</button>
+
+      <div class="quickview-gallery">
+        <img id="qvMainImg" class="quickview-main-img" src="assets/images/product-emirati-kandura.jpg"
+          alt="Product Image">
+      </div>
+
+      <div class="quickview-info">
+        <span class="quickview-badge" id="qvBadge">Bestseller</span>
+        <h3 class="quickview-title" id="qvTitle">Al-Malaki Emirati Kandura</h3>
+        <div class="quickview-arabic-title" id="qvArabicTitle">القميص الإماراتي الملكي</div>
+
+        <p class="quickview-desc" id="qvDesc">
+          Master-tailored authentic Emirati Kandura crafted from 100% Japanese Toyobo cotton.
+        </p>
+
+        <div class="quickview-fabric-box" id="qvFabric">
+          <strong>Fabric:</strong> 100% Japanese Toyobo Cotton (Grade A)<br>
+          <strong>Cut:</strong> Traditional Emirati with Handcrafted Tarbousha
+        </div>
+
+        <!-- Size Selection -->
+        <div class="quickview-sizes">
+          <div class="quickview-sizes-label">
+            <span>Available Heights / Sizes:</span>
+            <span class="size-guide-link size-guide-trigger">View Size Guide</span>
+          </div>
+          <div class="size-pill-group" id="qvSizeGroup">
+            <!-- Dynamic sizes -->
+          </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="quickview-actions">
+          <a id="qvInquireBtn" href="https://wa.me/919207907618" target="_blank" rel="noopener noreferrer" class="quickview-btn-add" style="text-decoration:none; width:100%; text-align:center;">
+            <span>Inquire About This Design</span>
+            <span>→</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       SIZE GUIDE & MEASUREMENT MODAL
+       ======================================================================== -->
+  <div class="size-modal-overlay" id="sizeModalOverlay">
+    <div class="size-modal-card">
+      <button class="quickview-close-btn" id="sizeModalCloseBtn" aria-label="Close Size Guide">✕</button>
+
+      <h3 style="font-size:1.4rem; font-weight:800; color:#102e26; margin-bottom:6px;">Kandura &amp; Jubbah Sizing Chart</h3>
+      <p style="font-size:0.88rem; color:#68786f; margin-bottom:16px;">
+        Traditional GCC Kanduras are sized according to your total body height (in inches from shoulder to floor).
+      </p>
+
+      <table class="size-table">
+        <thead>
+          <tr>
+            <th>Kandura Size</th>
+            <th>Your Height (cm)</th>
+            <th>Your Height (ft / in)</th>
+            <th>Chest Width (in)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>52</strong></td>
+            <td>158 – 164 cm</td>
+            <td>5'2" – 5'4"</td>
+            <td>21 – 22"</td>
+          </tr>
+          <tr>
+            <td><strong>54</strong></td>
+            <td>165 – 170 cm</td>
+            <td>5'5" – 5'7"</td>
+            <td>22 – 23"</td>
+          </tr>
+          <tr>
+            <td><strong>56</strong> (Standard)</td>
+            <td>171 – 176 cm</td>
+            <td>5'7" – 5'9"</td>
+            <td>23 – 24"</td>
+          </tr>
+          <tr>
+            <td><strong>58</strong></td>
+            <td>177 – 182 cm</td>
+            <td>5'10" – 6'0"</td>
+            <td>24 – 25"</td>
+          </tr>
+          <tr>
+            <td><strong>60</strong></td>
+            <td>183 – 188 cm</td>
+            <td>6'0" – 6'2"</td>
+            <td>25 – 26"</td>
+          </tr>
+          <tr>
+            <td><strong>62</strong></td>
+            <td>189 – 195 cm</td>
+            <td>6'2" – 6'5"</td>
+            <td>26 – 27"</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="margin-top:20px; font-size:0.85rem; color:#5c6b63; background:#faf7f2; padding:12px 16px; border-radius:8px;">
+        <i class="fa-solid fa-lightbulb" style="color:#d6b48f; margin-right:6px;"></i> <em>Need bespoke tailoring? Select our VIP Private Tailor consultation and our cutter will take your 14 individual measurements.</em>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="js/products.js?v=17.0"></script>
+  <script src="js/main.js?v=23.0"></script>
+</body>
+
+</html>
+
